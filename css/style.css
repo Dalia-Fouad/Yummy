@@ -1,0 +1,69 @@
+body {
+    background-color: #0D0D0D;
+    /* color: #f9f6f6; */
+}
+
+.loader {
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+/* --------------- Nav ------------------- */
+.togglebar img {
+    width: 65px;
+    height: 65px;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -240px;
+    z-index: 99;
+
+}
+
+.linkto {
+    top: 300px;
+}
+
+
+/* --------------------------- main --------------------------------- */
+figcaption {
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    right: 0px;
+    transition: all 0.5s;
+    background-color: #f9f6f6ca;
+}
+
+figure:hover figcaption {
+    transform: translateY(-100%);
+}
+
+
+/* ----------------------- Contact ------------------------------------- */
+input::placeholder {
+    color: #727578 !important;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+/* ----------------------------------------------------------- */
+
+i,
+figure,
+.ingred,
+.area,
+.btn-close {
+    cursor: pointer;
+}

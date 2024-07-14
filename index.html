@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo.png">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="">
+
+    <div class="loader  bg-black text-white  d-flex justify-content-center align-items-center d-none">
+        <i class="fas fa-spinner fa-spin fa-5x"></i>
+    </div>
+    <nav id="sidebar" class="d-flex ">
+        <div id="side" class=" bg-black position-relative d-flex flex-column justify-content-between  text-white">
+
+            <ul class="list-unstyled px-4 pt-4 me-4  overflow-hidden " id="navList">
+                <li class="mb-3"><a href="#Search" class="text-decoration-none text-white position-relative linkto"
+                        id="mealSearch">Search</a></li>
+                <li class="mb-3"><a href="#Categories" class="text-decoration-none text-white position-relative linkto"
+                        id="mealsCategories">Categories </a>
+                </li>
+                <li class="mb-3"> <a href="#Area" class="text-decoration-none text-white position-relative linkto"
+                        id="mealsArea">Area</a>
+                </li>
+                <li class="mb-3"><a href="#Ingredients" class="text-decoration-none text-white position-relative linkto"
+                        id="mealsIngredients">Ingredients</a>
+                </li>
+                <li class="mb-3"><a href="#Contact" class="text-decoration-none text-white position-relative linkto"
+                        id="Contact-Us"> Contact Us </a>
+                </li>
+
+            </ul>
+            <div class=" px-3">
+                <i class="fa-brands fa-facebook "></i>
+                <i class="fa-brands fa-twitter "></i>
+                <i class="fa fa-globe "></i>
+
+                <p class="p-0  m-0 mt-1">Copyright Â© 2019 All Rights</p>
+                <p class="p-0 m-0 mb-5">Reserved.</p>
+            </div>
+
+
+
+        </div>
+        <div class="bg-white togglebar d-flex flex-column align-items-center justify-content-between">
+            <img src="./images/logo.png" alt="logo" class=" p-2 mt-3">
+
+            <i class="fa-solid fa-align-justify mx-2 fa-2x " id="openbar"></i>
+            <i class="fa-solid fa-x fa-2x mx-2 " id="closebar"> </i>
+
+            <div class="icons d-flex flex-column align-items-center gap-2 mb-3">
+                <i class="fa fa-globe fs-6"></i>
+                <i class="fa fa-share-nodes fs-6"></i>
+            </div>
+
+
+        </div>
+
+    </nav>
+
+    <section id="Search">
+        <div class="container w-75 mt-4 text-white">
+            <div class="row d-none " id="searchInputs">
+                <div class="col-md-6 ">
+                    <input type="text" class="form-control bg-transparent text-white" placeholder="Search By Name"
+                        id="searchByName">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control bg-transparent text-white" maxlength="1"
+                        placeholder="Search By First Letter" id="searchByFLetter">
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5" id="cont">
+            <div class="row gy-2" id="meals">
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="detailSection" class="d-none">
+        <header class="container d-flex justify-content-end mt-4 mb-3">
+
+            <div class="btn-close btn-close-white " onclick="showmeals()"></div>
+        </header>
+        <main class="details mb-5 ">
+            <div class="container " id="mealDetail">
+                <!-- <div class="row text-white">
+                    <div class="col-md-4">
+                        <img src="./images/logo.png" class="w-100" alt="meal image" >
+                        <h3>Details Game</h3>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 id="title">jshfdjashgk</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi eaque, ipsam, expedita,
+                            accusantium optio laboriosam fuga sed molestiae inventore veritatis rerum reiciendis
+                            accusamus possimus molestias consequatur ab non aliquid minus saepe harum quae! Non
+                            asperiores rem recusandae ipsa vel deserunt quidem explicabo eveniet voluptate porro autem
+                            quod dicta, expedita dignissimos.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi eaque, ipsam, expedita,
+                            accusantium optio laboriosam fuga sed molestiae inventore veritatis rerum reiciendis
+                            accusamus possimus molestias consequatur ab non aliquid minus saepe harum quae! Non
+                            asperiores rem recusandae ipsa vel deserunt quidem explicabo eveniet voluptate porro autem
+                            quod dicta, expedita dignissimos.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi eaque, ipsam, expedita,
+                            accusantium optio laboriosam fuga sed molestiae inventore veritatis rerum reiciendis
+                            accusamus possimus molestias consequatur ab non aliquid minus saepe harum quae! Non
+                            asperiores rem recusandae ipsa vel deserunt quidem explicabo eveniet voluptate porro autem
+                            quod dicta, expedita dignissimos.</p>
+                        <h3>Category <span class="">: main</span></h3>
+                        <h3>Area <span class="">: egypt</span></h3>
+                        <h3>Recipes <span class="">: jcjdj</span></h3>
+                        <h3 class="mb-3">Tags :</h3>
+                        <span class="alert alert-danger py-1 px-1  ms-2">Soup</span>
+                        <div class="btns mt-3">
+                            <a class="btn btn-success" href="" target="_blank"> Source </a>
+                            <a class="btn btn-danger" href="" target="_blank"> You Tube </a>
+                        </div>
+                       
+                    </div>
+                </div> -->
+
+            </div>
+
+
+
+        </main>
+    </section>
+
+    <section id="Contact" class="d-none">
+        <div class="container w-70 pt-4   d-flex  flex-column justify-content-center align-items-center vh-100">
+            <div class="row gy-4 mb-4 p-5 pb-0" id="searchInputs">
+
+                <div class="col-md-6  ">
+                    <input type="text" class="form-control " placeholder="Enter Your Name" id="name">
+                    <div class="alert alert-danger d-none mt-2" role="alert" id="nameAlert">
+                        Special characters and numbers not allowed
+                    </div>
+                </div>
+
+                <div class="col-md-6 ">
+                    <input type="text" class="form-control  " placeholder="Enter Your Email" id="email">
+                    <div class="alert alert-danger d-none mt-2 " role="alert" id="emailAlert">
+                        Email not valid *exemple@yyy.zzz
+                    </div>
+                </div>
+
+                <div class="col-md-6 ">
+                    <input type="text" class="form-control  " placeholder="Enter Your Phone" id="phone">
+                    <div class="alert alert-danger d-none mt-2 " role="alert" id="phoneAlert">
+                        Enter valid Phone Number
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <input type="number" class="form-control  " max="5" min="2" placeholder="Enter Your Age" id="age">
+                    <div class="alert alert-danger d-none mt-2 " role="alert" id="ageAlert">
+                        Enter valid age
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <input type="password" class="form-control  " placeholder="Enter Your Password" id="password">
+                    <div class="alert alert-danger d-none mt-2 " role="alert" id="passwordAlert">
+                        Enter valid password *Minimum eight characters, at least one letter and one number:*
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <input type="password" class="form-control  " placeholder="Reassword" id="repassword">
+                    <div class="alert alert-danger d-none mt-2 " role="alert" id="repasswordAlert">
+                        Enter same repassword
+                    </div>
+                </div>
+
+
+            </div>
+            <button class="btn btn-outline-danger" id="submitbtn" disabled="true">Submit</button>
+
+        </div>
+    </section>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
