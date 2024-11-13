@@ -67,3 +67,11 @@ figure,
 .btn-close {
     cursor: pointer;
 }
+
+/* ------------------------------------------------- */
+  @media (max-width : 766px) {
+    .container{
+        width: 85%;
+        padding-left: 60px;
+    }
+    }
